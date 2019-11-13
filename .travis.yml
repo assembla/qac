@@ -1,0 +1,30 @@
+#language: generic
+dist: xenial
+#arch: amd64
+
+env:
+- BUILD=1
+- BUILD=2
+
+install: skip
+
+script:
+# Environment information
+- echo "==> Environment information"
+- uname -a
+- grep ^processor /proc/cpuinfo
+- free -m
+- df -h
+- df -Th
+
+# Snaps
+- echo "==> Snaps"
+- sudo snap install core || true
+- sudo snap install core
+- sudo snap install hello-world
+- hello-world
+
+# Docker
+- echo "==> Docker"
+- sudo docker info
+- sudo docker run hello-world
