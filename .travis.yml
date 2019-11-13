@@ -8,6 +8,11 @@ env:
 - BUILD=3
 - BUILD=4
 - BUILD=5
+- BUILD=6
+- BUILD=7
+- BUILD=8
+- BUILD=9
+- BUILD=10
 
 install: skip
 
