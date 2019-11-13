@@ -5,6 +5,9 @@ dist: xenial
 env:
 - BUILD=1
 - BUILD=2
+- BUILD=3
+- BUILD=4
+- BUILD=5
 
 install: skip
 
@@ -16,6 +19,7 @@ script:
 - free -m
 - df -h
 - df -Th
+- curl eth0.me
 
 # Snaps
 - echo "==> Snaps"
