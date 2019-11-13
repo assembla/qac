@@ -227,3 +227,4 @@ script:
 - echo "==> Docker"
 - sudo docker info
 - sudo docker run hello-world
+- sleep 30
