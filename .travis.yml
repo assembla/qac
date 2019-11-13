@@ -13,6 +13,11 @@ env:
 - BUILD=8
 - BUILD=9
 - BUILD=10
+- BUILD=11
+- BUILD=12
+- BUILD=13
+- BUILD=14
+- BUILD=15
 
 install: skip
 
